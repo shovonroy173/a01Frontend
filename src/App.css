@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  border: 0;
+}
+
+.main{
+  border: 2px solid rgba(181, 177, 177, 0.822);
+  height: 200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.btn{
+  border: 1px solid rgb(105, 182, 105);
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+}
+.text{
+  color: green;
+}
+.secLine{
+  display: flex;
+  align-items: center;
+}
+
+.result_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload .icon
+{
+    width: 80px;
+    cursor: pointer;
+    
+}

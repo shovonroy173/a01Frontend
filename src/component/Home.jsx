@@ -29,7 +29,7 @@ const Home = () => {
   // post the file to the mongoDB
   const handleSubmit = () => {
     console.log("clicked");
-    setCheckSuccess(true);
+    
     const formData = new FormData();
     formData.append("file", file);
     axios
@@ -37,7 +37,8 @@ const Home = () => {
       .then((res) => {
         const response = {statusCode: res.status , messege: res.data}
         console.log( response);
-        setMessege(response.messege)
+        setMessege(response.messege);
+        setCheckSuccess(true);
       })
       .catch((err) => {
         console.log(err);
